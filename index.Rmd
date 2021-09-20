@@ -1,11 +1,16 @@
 ---
-title: "EDS 123: Optional MEDS Template"
-description: "A minimal website skeleton and theme for MEDS course with distill (by RStudio)"
+title: "EDS 213: Metadata Standards, Data Modeling and Data Semantics"
+description: "This course will introduce students to reuse and the preservation of envrionmental data"
 site: distill::distill_website
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(kableExtra)
+library(googlesheets4)
+library(DT)
 
 # Learn more about creating websites with Distill at:
 # https://rstudio.github.io/distill/website.html
@@ -15,99 +20,72 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-```{r, out.width = "100%", fig.cap = "Update this image by dropping your new image into the img folder of the project, then open the index.Rmd & change the path to point to the new image. Image: Mississippi River south of Memphis, TN, from USGS shared on Unsplash (https://unsplash.com/photos/35Z2ylLRCO8)."}
+```{r, out.width = "100%"}
 
-# UPDATE IMAGE HERE 
-# or copy/paste this code elsewhere, updating the file path, to add other images to your site!
-knitr::include_graphics("img/usgs_sat.jpeg")
+knitr::include_graphics("img/internet.png")
 ```
 
-## Welcome to the MEDS distill template
+## Instructor
 
-Welcome to the MEDS Course Website template! This template is made with [distill](https://rstudio.github.io/distill/), a package to build lightweight and robust websites in R. This method for creating a course website may make the most sense for MEDS teachers who are familiar with RStudio, R Markdown, git and GitHub (or who want to learn!). For those of you who do *not* want to create your website with distill in R, but still want a course website, check out [Course-in-a-Box](https://course-in-a-box.p2pu.org/) to create a site with no prior coding experience.
-
-For those wanting to take the distill/R websites path: this template acts as both a starting point for your site, and place to learn basics ways to customize it (different topics currently populate the different modules, which I expect teachers will replace with different weeks or lessons or topics as useful for your courses). 
-
-### Some starting points:
-
-- Follow along with the "Getting started with the MEDS distill template" (COMING SOON) instructions to set up your own distill website. Please reach out to Allison for help getting your website started, and submit problems and suggestions as issues [here](https://github.com/allisonhorst/meds-distill-template). 
-
-- The "Weekly materials" section of this template site can be updated with your course materials, but also in this template serves the additional purpose of showing you how to customize some things on your page.
-
-- See the [EDS 212 Website](https://allisonhorst.github.io/EDS_212_essential-math/) for an example of what a customized live course site can look like using this template.
-
-<p style="color: #ba5e00"><b>TO UPDATE THIS PAGE:</b> Open and edit the <b>index.Rmd</b> file, in the project root, to delete this placeholder text and customize with your own!</p>
-
-## Course description
-
-<p style="color: #ba5e00"><b>NOTE:</b> A lot of this home page information can be directly from your syllabus.</p>
-
-Add your course description here.
-
-## Teaching team
-
-**Instructor:** Mike Wazowski (wazowski\@monstersinc.org)
-
--   **Office:** Closet 100
--   **Office hours:** Friday 9pm - 11pm
-
-**Teaching assistant:** Boo (boo\@monstersinc.org)
-
--   **Office:** Boo's Room
--   **Office hours:** Saturday 7am - 8am
+[Julien Brun](https://brunj7.github.io/about.html) (brun\@nceas.ucsb.edu)
 
 ## Important links
 
--   Link to full course syllabus (here is the [MEDS optional syllabus template](https://docs.google.com/document/d/1b2CElvwKk-haEA1axY5KvTEBbiSPUf7dIRUNX7gCI6w/edit?usp=sharing))
+-   [Course syllabus](https://bren.ucsb.edu/courses/eds-213)
+-   [Code of Conduct](code_of_conduct.html)
 
--   Link to Code of Conduct (Bren / UCSB)
+## Course description
 
--   Link to course GitHub Classroom, other essential resources
+This course will cover the concept of metadata and how it can be leveraged for the integration of heterogeneous datasets into standardized data products. We will practice how to download data from data repositories both manually and programmatically relying on APIs. We will also discuss how to track the provenance of data, generate metadata integrating data semantics to increase data discovery, as well as archiving data products on data repositories to make them available to the broader community.
 
-## Weekly course schedule
-
--   **Lectures:** MW 8am - 9:15am (Warehouse Room 1)
--   **Labs:** Th 10am - 12pm (Warehouse Room 2)
 
 ## Learning objectives
 
-Condimentum id venenatis a condimentum. Ultricies mi quis hendrerit dolor magna eget est. Turpis egestas maecenas pharetra convallis. Sem nulla pharetra diam sit amet. Diam volutpat commodo sed egestas egestas fringilla. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Ornare massa eget egestas purus viverra accumsan in.
+- Re-use data from others leveraging data repositories and metadata standards
 
--   Vulputate eu scelerisque felis imperdiet proin.
--   Euismod nisi porta lorem mollis aliquam.
--   Urna molestie at elementum eu facilisis sed odio morbi quis.
--   Convallis a cras semper auctor neque. Semper quis lectus nulla at volutpat diam ut venenatis tellus.
+- Rely on APIs to programmatically access and download data 
+
+- Understand concept of metadata, data semantics and data preservation and why it matters in our path towards reproducible and open science.v
+
+
+## Sessions (subject to change)
+
+EDS 213 is a half Fall quarter course running from Monday 2021-09-27 to Wednesday 2021-10-27
+
+```{r echo=FALSE, message=FALSE}
+# gs4_deauth()
+# 
+# #read the scheduel from Google Sheet
+# sched <- read_sheet("https://docs.google.com/spreadsheets/d/1GckWJ4li6G2AyCjS8MrQSN6znym27aO9IPujdWfHc14/edit#gid=492363688")
+# 
+# datatable(sched, rownames=FALSE)
+```
+| Day / Session |	Session Type|	Topics |
+|---------------|-------------|--------|
+| Monday 9/27	| Lecture |	Re-using data -- Data Repositories & metadata standards |
+| Wednesday 9/29	| Lab	| Re-using data -- Using dataONE to find environmental data |
+| Monday 10/4	| Lecture	| Re-using data -- Accessing data in a programatically way |
+| Wednesday 10/6	| Lab	| Re-using data -- APIs for environmental data |
+| Monday 10/11	| Lecture	| Preserving data -- Data Management Plan & Metadata standards for envrionmental data |
+| Wednesday 10/13	| Lab	| Preserving data -- Developing your Data Management Plan | 
+| Monday 10/18	| Lecture	| Preserving data -- Data Provenance and Semantics | 
+| Wednesday 10/20	| Lab	| Preserving data -- Documenting things |
+| Monday 10/25	| Lecture	| Preserving your data -- uploading data to the KNB |
+| Wednesday 10/27	| Lab	| Project presentations |
+
 
 ## Course requirements
 
 ### Computing
 
--   Minimum device requirements
+- Minimum [MEDS device requirements](https://ucsb-meds.github.io/computer_reqs.html)
 
--   Software requirements
+- Have a ready to be used GitHub Account (https://github.com/) 
 
--   Account requirements
 
 ### Textbook
 
--   Required textbook / information
+- R for Data Science: https://r4ds.had.co.nz/
+- 
 
-### Other requirements
 
--   Anything else
--   Important for students to know
-
-## Tentative topics
-
-| Week | Lecture topics | Lab topics |
-|------|----------------|------------|
-| 1    | Topics         | Topics     |
-| 2    | Topics         | Topics     |
-| 3    | Topics         | Topics     |
-| 4    | Topics         | Topics     |
-| 5    | Topics         | Topics     |
-| 6    | Topics         | Topics     |
-| 7    | Topics         | Topics     |
-| 8    | Topics         | Topics     |
-| 9    | Topics         | Topics     |
-| 10   | Topics         | Topics     |
