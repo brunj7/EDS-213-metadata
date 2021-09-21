@@ -61,7 +61,7 @@ EDS 213 is a half Fall quarter course running from Monday 2021-09-27 to Wednesda
 # datatable(sched, rownames=FALSE)
 ```
 | Day / Session |	Session Type|	Topics |
-|---------------|-------------|--------|
+|-----------|-------|--------------------------------|
 | Monday 9/27	| Lecture |	Re-using data -- Data Repositories & metadata standards |
 | Wednesday 9/29	| Lab	| Re-using data -- Using dataONE to find environmental data |
 | Monday 10/4	| Lecture	| Re-using data -- Accessing data in a programatically way |
