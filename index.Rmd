@@ -20,7 +20,7 @@ library(DT)
 
 ```
 
-```{r, out.width = "100%"}
+```{r, out.width = "100%", fig.cap="Visualization of the internet"}
 
 knitr::include_graphics("img/internet.png")
 ```
@@ -48,9 +48,14 @@ This course will cover the concept of metadata and how it can be leveraged for t
 - Understand concept of metadata, data semantics and data preservation and why it matters in our path towards reproducible and open science.v
 
 
-## Sessions (subject to change)
+## Curriculum 
 
-EDS 213 is a half Fall quarter course running from Monday 2021-09-27 to Wednesday 2021-10-27
+EDS 213 is a half Fall quarter course (2 units) running from Monday 2021-09-27 to Wednesday 2021-10-27. The course is developed around two main themes:
+
+- Re-using data from others
+- Preserving your data
+
+## Session (subject to change)
 
 ```{r echo=FALSE, message=FALSE}
 # gs4_deauth()
@@ -60,9 +65,9 @@ EDS 213 is a half Fall quarter course running from Monday 2021-09-27 to Wednesda
 # 
 # datatable(sched, rownames=FALSE)
 ```
-| Day / Session |	Session Type|	Topics |
+| Day / Session |	Session Type |	Topics |
 |-----------|-------|--------------------------------|
-| Monday 9/27	| Lecture |	Re-using data -- Data Repositories & metadata standards |
+| Monday 9/27	| Lecture |	Re-using data -- Data Preservation & Data Repositories |
 | Wednesday 9/29	| Lab	| Re-using data -- Using dataONE to find environmental data |
 | Monday 10/4	| Lecture	| Re-using data -- Accessing data in a programatically way |
 | Wednesday 10/6	| Lab	| Re-using data -- APIs for environmental data |
@@ -73,6 +78,13 @@ EDS 213 is a half Fall quarter course running from Monday 2021-09-27 to Wednesda
 | Monday 10/25	| Lecture	| Preserving your data -- uploading data to the KNB |
 | Wednesday 10/27	| Lab	| Project presentations |
 
+
+## Grading
+
+The grading for this course is organized as follow:
+- 20% Class participation
+- 30% Lab / Assignments
+- 50% Group project
 
 ## Course requirements
 
@@ -86,6 +98,8 @@ EDS 213 is a half Fall quarter course running from Monday 2021-09-27 to Wednesda
 ### Textbook
 
 - R for Data Science: https://r4ds.had.co.nz/
-- 
+- Recknagel, F., Michener, W.K., 2018. Ecological Informatics: An Introduction, in: Recknagel, F., Michener, W.K. (Eds.), Ecological Informatics: Data Management and Knowledge Discovery. Springer International Publishing, Cham, pp. 3–10. https://doi.org/10.1007/978-3-319-59928-1_1
+- Nielsen Michael,Reinventing Discovery, 2013. https://press.princeton.edu/books/paperback/9780691160191/reinventing-discovery (accessible through the library)
+
 
 
