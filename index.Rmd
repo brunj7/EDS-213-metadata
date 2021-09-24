@@ -1,6 +1,7 @@
 ---
-title: "EDS 213: Metadata Standards, Data Modeling and Data Semantics"
-description: "This course will introduce students to reuse and the preservation of envrionmental data"
+title: 'EDS 213: Metadata Standards, Data Modeling and Data Semantics'
+description: This course will introduce students to reuse and the preservation of
+  envrionmental data
 site: distill::distill_website
 ---
 
@@ -68,10 +69,10 @@ EDS 213 is a half Fall quarter course (2 units) running from Monday 2021-09-27 t
 | Day / Session |	Session Type |	Topics |
 |-----------|-------|--------------------------------|
 | Monday 9/27	| Lecture |	Re-using data -- Data Preservation & Data Repositories |
-| Wednesday 9/29	| Lab	| Re-using data -- Using dataONE to find environmental data |
+| Wednesday 9/29	| Lab	| Re-using data -- Using dataONE to find environmental data & Journal club|
 | Monday 10/4	| Lecture	| Re-using data -- Accessing data in a programatically way |
 | Wednesday 10/6	| Lab	| Re-using data -- APIs for environmental data |
-| Monday 10/11	| Lecture	| Preserving data -- Data Management Plan & Metadata standards for envrionmental data |
+| Monday 10/11	| Lecture	| Preserving data -- Data modeling & Metadata standards for environmental data |
 | Wednesday 10/13	| Lab	| Preserving data -- Developing your Data Management Plan | 
 | Monday 10/18	| Lecture	| Preserving data -- Data Provenance and Semantics | 
 | Wednesday 10/20	| Lab	| Preserving data -- Documenting things |
@@ -82,6 +83,7 @@ EDS 213 is a half Fall quarter course (2 units) running from Monday 2021-09-27 t
 ## Grading
 
 The grading for this course is organized as follow:
+
 - 20% Class participation
 - 30% Lab / Assignments
 - 50% Group project
@@ -95,10 +97,10 @@ The grading for this course is organized as follow:
 - Have a ready to be used GitHub Account (https://github.com/) 
 
 
-### Textbook
+### Textbook (optional)
 
 - R for Data Science: https://r4ds.had.co.nz/
-- Recknagel, F., Michener, W.K., 2018. Ecological Informatics: An Introduction, in: Recknagel, F., Michener, W.K. (Eds.), Ecological Informatics: Data Management and Knowledge Discovery. Springer International Publishing, Cham, pp. 3–10. https://doi.org/10.1007/978-3-319-59928-1_1
+- Recknagel, F., Michener, W.K., 2018. Ecological Informatics: An Introduction, in: Recknagel, F., Michener, W.K. (Eds.), Ecological Informatics: Data Management and Knowledge Discovery. Springer International Publishing, Cham, pp. 3–10. https://doi.org/10.1007/978-3-319-59928-1_1 (selected chapters)
 - Nielsen Michael,Reinventing Discovery, 2013. https://press.princeton.edu/books/paperback/9780691160191/reinventing-discovery (accessible through the library)
 
 
