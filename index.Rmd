@@ -101,7 +101,7 @@ The grading for this course is organized as follow:
 
 - R for Data Science: https://r4ds.had.co.nz/
 - Recknagel, F., Michener, W.K., 2018. Ecological Informatics: Data Management and Knowledge Discovery. Springer International Publishing, Cham, pp. 3–10. https://doi.org/10.1007/978-3-319-59928-1_1 (selected chapters)
-- Nielsen Michael,Reinventing Discovery, 2013. https://press.princeton.edu/books/paperback/9780691160191/reinventing-discovery (accessible through the library)
+- Nielsen Michael, Reinventing Discovery, 2013. https://press.princeton.edu/books/paperback/9780691160191/reinventing-discovery (accessible through the library)
 
 
 
