@@ -7,10 +7,10 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "Topics"
+    - text: "Weeks"
       menu:
         - text: "Week 1"
-          href: topic_1.html
+          href: week_1.html
     - text: "Assignments"
       href: assignments.html
     - text: "Resources"
