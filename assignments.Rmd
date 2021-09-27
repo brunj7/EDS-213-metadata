@@ -2,6 +2,11 @@
 title: "Assignments"
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+opts_chunk$get("cache.path")
+
 ## Week 1 
 
 ### Assignment 1 -- Journal club
@@ -13,7 +18,7 @@ title: "Assignments"
 - Participate in the discussion during the Journal club
 
 
-#### Resources
+#### Reading Resources
 
 1. Borer, et al, 2009. Some Simple Guidelines for Effective Data Management. https://doi.org/10.1890/0012-9623-90.2.205
 
@@ -34,23 +39,24 @@ title: "Assignments"
 
 #### Group Project -- Teams
 
-```{r}
+```{r journal club, cache=FALSE}
 library(tidyverse)
 library(DT)
 
 # Set the random seed to make this reproducible
-set.seed(123)
+set.seed(12)
 
 # Read the roster 
 students <- read.csv("data/eds213_roster.csv")
 
 # Randomly create the groups
-students %>% 
+groups <- students %>% 
   slice(sample(1:n())) %>% # randomly arrange the data frame
-  group_by((row_number()-1) %/% (n()/9)) %>%  # create the Groups
+  group_by((row_number()-1) %/% (n()/9)) %>%  # create 9 Groups
   nest %>% pull() %>% bind_rows(.id = "Group") %>%  # group number as column
   datatable(options = list(pageLength = 25))   # Display
 
+groups
 ```
 
 #### Due date:
@@ -71,12 +77,12 @@ Wed 09/29/2021
 
 #### Project Teams
 
-```{r}
+```{r group project, cache=FALSE}
 library(tidyverse)
 library(DT)
 
 # Set the random seed to make this reproducible
-set.seed(12)
+set.seed(123)
 
 # Read the roster 
 students <- read.csv("data/eds213_roster.csv")
@@ -84,9 +90,10 @@ students <- read.csv("data/eds213_roster.csv")
 # Randomly create the groups
 students %>% 
   slice(sample(1:n())) %>%   # randomly arrange the data frame
-  group_by((row_number()-1) %/% (n()/7)) %>%  # create the Groups
-  nest %>% pull() %>% bind_rows(.id = "Group") %>%   # group number as column
+  group_by((row_number()-1) %/% (n()/7)) %>%  # create 7 Groups
+  nest %>% pull() %>% bind_rows(.id = "Group") %>%  # group number as column
   datatable(options = list(pageLength = 25))   # Display
+
 
 ```
 
