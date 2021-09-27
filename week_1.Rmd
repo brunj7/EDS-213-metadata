@@ -21,3 +21,5 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Assignment 
 
+[Click here](https://brunj7.github.io/EDS-213-metadata/assignments.html)
+

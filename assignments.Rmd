@@ -76,7 +76,7 @@ library(tidyverse)
 library(DT)
 
 # Set the random seed to make this reproducible
-set.seed(1)
+set.seed(12)
 
 # Read the roster 
 students <- read.csv("data/eds213_roster.csv")
