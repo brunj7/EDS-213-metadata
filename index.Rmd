@@ -56,6 +56,10 @@ EDS 213 is a half Fall quarter course (2 units) running from Monday 2021-09-27 t
 - Re-using data from others
 - Preserving your data
 
+## Office hours
+
+Mondays from 1-2PM, except Monday 10/11 2-3PM (due to workshop)
+
 ## Session (subject to change)
 
 ```{r echo=FALSE, message=FALSE}
