@@ -11,12 +11,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Course Introduction
 
-[Slide deck]()
+[Slide deck](https://docs.google.com/presentation/d/e/2PACX-1vQuBC1_0JOCuoKOF5miaetb9n8yH43_E8haW9w_sLcfZtBHJOVev9v8ppEAovZoNmMlPpf3hkyVO5qV/pub?start=false&loop=false&delayms=60000)
 
 
 ## Data Preservation and Repositories
 
-[Slide deck]()
+[Slide deck](https://brunj7.github.io/EDS-213-metadata/slides/intro_datarepo.html)
 
 
 ## Assignment 
