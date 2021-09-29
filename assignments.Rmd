@@ -72,8 +72,8 @@ Wed 09/29/2021
 - Brainstorm as a group about your group project question
 - Open an GitHub issue on [this repository](https://github.com/brunj7/EDS-213-group-project) describing:
   - Your question
-  - The type of data sets you are planning to search for on ADC, KNB and/or EDI repositories
-  - Link to your Group project repository
+  - The type of data sets you are planning to search for on [ADC](https://arcticdata.io/catalog/data), [KNB](https://knb.ecoinformatics.org/) and/or [EDI](https://environmentaldatainitiative.org/) repositories via [DataONE](https://www.dataone.org/)
+  - Link to your Group project repository on GitHub
 
 #### Project Teams
 
@@ -101,5 +101,5 @@ students %>%
 
 #### Due date:
 
-Mon 10/04/2021
+**Wed 10/06/2021**
 
