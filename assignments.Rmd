@@ -100,5 +100,5 @@ students %>%
 
 #### Due date:
 
-**Wed 10/06/2021**
+**Wed 10/06/2021 at 12PM (Noon)**
 
