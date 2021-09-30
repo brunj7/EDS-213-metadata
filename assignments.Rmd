@@ -65,14 +65,15 @@ Wed 09/29/2021
 
 ### Assignment 2 -- Define your group project question
 
-
 #### Expectation:
 
 - Brainstorm as a group about your group project question
 - Open an GitHub issue on [this repository](https://github.com/brunj7/EDS-213-group-project) describing:
-  - Your question
+  - Your environmental question
   - The type of data sets you are planning to search for on [ADC](https://arcticdata.io/catalog/data), [KNB](https://knb.ecoinformatics.org/) and/or [EDI](https://environmentaldatainitiative.org/) repositories via [DataONE](https://www.dataone.org/)
   - Link to your Group project repository on GitHub
+  
+**See [here](group_project.html) for more background information about the group project**
 
 #### Project Teams
 

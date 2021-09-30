@@ -13,6 +13,8 @@ navbar:
           href: week_1.html
     - text: "Assignments"
       href: assignments.html
+    - text: "Group Project"
+      href: group_project.html
     - text: "Resources"
       href: resources.html
     - icon: fab fa-github

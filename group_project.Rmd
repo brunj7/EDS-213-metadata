@@ -1,0 +1,35 @@
+---
+title: "Group Project Description"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Group Project Goal
+
+The goal of the group project is to practice the re-use of data for a [synthesis project](https://www.nceas.ucsb.edu/our-approach) merging different datasets to get new insights, as well as preserving your scientific products on a data repository. 
+
+
+## Project Development
+
+You will have to:
+
+1. Define an environmental scientific question you would like to answer
+2. Search [dataONE](https://search.dataone.org/data), [Google datasets](https://datasetsearch.research.google.com/) and other data repositories (https://www.re3data.org/) to find data to try to answer this question
+3. Develop a Data Management Plan for your project, including keeping track of the provenance (sources) of your data and who will be in charge of what.
+4. Develop a scripted  workflow to conduct your analysis. When possible relies on API to programmatically download the necessary data sets
+5. Preserve your data products on the [KNB](https://knb.ecoinformatics.org/) repository,  including developing the necessary metadata to make them reusable
+6. Document and Make your code available
+
+**The most important part of the project is to go through those steps**. Having a conclusion or a specific answer to your scientific question at the end of the project is secondary. The evaluation will be focused on the steps followed and how reusable your work will be.
+
+
+## Project Example
+
+I will take the example of the LTER Luquillo stream chemistry dataset that we used for the [group project of EDS-214](https://brunj7.github.io/EDS-214-analytical-workflows/group_project.html). 
+
+An example of project question based on this data could be: Do Hurricanes have an significant impact on the chemistry of streams?  The datasets to merge could be the [one] we used for Luquillo combined with other LTER sites, such as [Florida Coastal Everglades](https://lternet.edu/site/florida-coastal-everglades-lter/), or [USGS stream chemistry[(https://waterdata.usgs.gov/nwis)] data that are also frequently impacted by Hurricanes.
+
+
+Actually, there was a recent LTER synthesis working group which look at patterns in stream chemistry: https://lternet.edu/working-groups/stream-energy-nutrient-cycling/ !
