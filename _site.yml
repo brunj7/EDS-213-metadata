@@ -11,6 +11,8 @@ navbar:
       menu:
         - text: "Week 1"
           href: week_1.html
+        - text: "Week 2"
+          href: week_2.html
     - text: "Assignments"
       href: assignments.html
     - text: "Group Project"
