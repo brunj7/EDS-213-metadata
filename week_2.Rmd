@@ -9,7 +9,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Monday 10/04/2021
 
-## Using APIs to programatically retrieving data
+## Using APIs to programatically retrieve data
+
+<br>
 
 ### The manual way
 
@@ -17,6 +19,7 @@ Using website to retrieve data is great interactive way to search and explore da
 
 In case you need some inspiration, look at this dataset about historic precipitation in Alaska: https://doi.org/10.5063/N29VCQ
 
+<br>
 
 ### The programmatic way
 

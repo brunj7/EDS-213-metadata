@@ -218,7 +218,8 @@ XML provides the basic, common, and quite simple structure and syntax. It is the
 
 ---
 
-# Document Types -- JSON
+# Document Types -- JSON <img src="https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/man/figures/logo.png" style="float:right" width="20%"> <img/>
+
 
 ```json
 [
@@ -313,9 +314,30 @@ https://cran.r-project.org/web/packages/dataRetrieval/vignettes/dataRetrieval.ht
 
 ---
 
-# What if there is no API?
+# Debugging code using API
 
-Developing and maintaining an API require resources and not all data provider can afford it!
+### Note that begugging code relying on an API is hard!!
+
+<br>
+
+Since you are using a webservice, you have now a few more moving parts that can make your code fail, espcially if there is connectivity issues (including paywall) and potential server issues (or limitations).
+
+**A good sign of an unreliable API is when your code seems to not consistently fail or provide variable results when ran several times in a row.**
+
+---
+
+# What if there is no API ?
+
+<br>
+
+### Developing and maintaining an API requires resources and not all data provider can afford it!
+
+<br>
+
+### If no APIs are available, then you can try to use web scraping to collect data. Quick intro to webscrapping [here](https://r-meetup-sb.github.io/web-scraping-rvest/index.html#4_Web_scraping_workflow)
+
+_Please always check that the data you are scraping is publicly available  and that there is no personal or confidential information gathered. Also please do not overload the web server you are scraping_
+
 
 
 
