@@ -320,7 +320,7 @@ https://cran.r-project.org/web/packages/dataRetrieval/vignettes/dataRetrieval.ht
 
 <br>
 
-Since you are using a webservice, you have now a few more moving parts that can make your code fail, espcially if there is connectivity issues (including paywall) and potential server issues (or limitations).
+Since you are using a web service, you have now a few more moving parts that can make your code fail, espcially if there is connectivity issues (including paywall) and potential server issues (or limitations).
 
 **A good sign of an unreliable API is when your code seems to not consistently fail or provide variable results when ran several times in a row.**
 
@@ -336,7 +336,8 @@ Since you are using a webservice, you have now a few more moving parts that can 
 
 ### If no APIs are available, then you can try to use web scraping to collect data. Quick intro to webscrapping [here](https://r-meetup-sb.github.io/web-scraping-rvest/index.html#4_Web_scraping_workflow)
 
-_Please always check that the data you are scraping is publicly available  and that there is no personal or confidential information gathered. Also please do not overload the web server you are scraping_
+
+Please always check that the data you are scraping is publicly available  and that there is no personal or confidential information gathered. Also please do not overload the web server you are scraping
 
 
 
