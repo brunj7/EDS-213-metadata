@@ -59,6 +59,6 @@ Create a plot by year from 2009 to 2015 showing the **average** percentage of ho
 
 <br>
 
-## More examples about how to use `metajam`
+### More examples about how to use `metajam`
 
 https://nceas.github.io/metajam/articles/dataset-single.html
