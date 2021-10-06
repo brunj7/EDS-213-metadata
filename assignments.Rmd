@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Week 1 
 
-### Assignment 1 -- Journal club
+### Assignment 1.1 -- Journal club
 
 #### Expectation:
 
@@ -63,7 +63,7 @@ groups
 Wed 09/29/2021
 
 
-### Assignment 2 -- Define your group project question
+### Assignment 1.2 -- Define your group project question
 
 #### Expectation:
 
@@ -103,3 +103,24 @@ students %>%
 
 **Wed 10/06/2021 at 12PM (Noon)**
 
+---
+
+## Week2
+
+### Assignment 2.1 --  `dataRetrieval`
+
+1. Add the [Santa Paula Creek](https://waterdata.usgs.gov/nwis/uv?site_no=11113500) gauge to exercise we did in class
+2. What is the best way to query multiple sites using this R package?
+3. Create a plot showing any stream flow response to the rain of last night (10/04). At what exact time did the stream flow peaked at the two location
+
+
+### Assignment 2.2 -- Use an API to retrieve data for your project
+
+1. Based and what we discussed this week, find an API that you could use to retrieve data you are using in your group project.
+
+2. In your project repository, write a script to retrieve the data relying on this API. Don't forget to capture any information about how you found the data as well as any metadata in the Rmarkdown / jupyter notebook so an external user can understand the data set(s) and track their source / data provider. 
+
+
+## Due date:
+
+**Wed 10/12/2021 at 12PM (Noon)**

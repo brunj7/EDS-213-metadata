@@ -2509,7 +2509,7 @@ Weeks
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#monday-10042021">Monday 10/04/2021</a>
+<li><a href="#monday-10042021-lecture">Monday 10/04/2021 – Lecture</a>
 <ul>
 <li><a href="#using-apis-to-programatically-retrieve-data">Using APIs to programatically retrieve data</a>
 <ul>
@@ -2517,10 +2517,23 @@ Weeks
 <li><a href="#the-programmatic-way">The programmatic way</a></li>
 </ul></li>
 </ul></li>
+<li><a href="#wednesday-10062021-using-apis-lab">Wednesday 10/06/2021 – Using APIs Lab</a>
+<ul>
+<li><a href="#usgs-dataretrieval-r-package-to-retrieve-hydrological-data">USGS <code>dataRetrieval</code> R package to retrieve hydrological data</a>
+<ul>
+<li><a href="#exercise-1">Exercise 1</a></li>
+<li><a href="#bonus">Bonus</a></li>
+</ul></li>
+<li><a href="#metajam"><code>metajam</code></a>
+<ul>
+<li><a href="#exercise-2">Exercise 2</a></li>
+<li><a href="#bonus-1">Bonus</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
 </div>
-<h1 id="monday-10042021">Monday 10/04/2021</h1>
+<h1 id="monday-10042021-lecture">Monday 10/04/2021 – Lecture</h1>
 <h2 id="using-apis-to-programatically-retrieve-data">Using APIs to programatically retrieve data</h2>
 <p><br></p>
 <h3 id="the-manual-way">The manual way</h3>
@@ -2530,6 +2543,30 @@ Weeks
 <h3 id="the-programmatic-way">The programmatic way</h3>
 <p>Although discovering data through a web interface is convenient and offers a great experience, it is often hard to scale this approach or to integrate it into a reproducible workflow.</p>
 <p><strong><a href="https://brunj7.github.io/EDS-213-metadata/slides/api.html">Slides</a></strong></p>
+<h1 id="wednesday-10062021-using-apis-lab">Wednesday 10/06/2021 – Using APIs Lab</h1>
+<h2 id="usgs-dataretrieval-r-package-to-retrieve-hydrological-data">USGS <code>dataRetrieval</code> R package to retrieve hydrological data</h2>
+<p>USGS is managing a vast <a href="https://dashboard.waterdata.usgs.gov/app/nwd/?region=lower48&amp;aoi=default">network of gauges</a> to monitor freshwater across the US.</p>
+<h3 id="exercise-1">Exercise 1</h3>
+<p>Start a new Markdown document to plot the discharge time-series for the Ventura River from 2019-10-01 to 2020-10-05</p>
+<p>Webpage: <a href="https://waterdata.usgs.gov/nwis/uv?site_no=11118500" class="uri">https://waterdata.usgs.gov/nwis/uv?site_no=11118500</a></p>
+<p>Tutorial for the package can be found here: <a href="https://cran.r-project.org/web/packages/dataRetrieval/vignettes/dataRetrieval.html#daily-data" class="uri">https://cran.r-project.org/web/packages/dataRetrieval/vignettes/dataRetrieval.html#daily-data</a></p>
+<h3 id="bonus">Bonus</h3>
+<p>How would you try to determine when this stream gauge record started using the API?</p>
+<h2 id="metajam"><code>metajam</code></h2>
+<p>The <code>metajam</code> R package relies on the dataONE API to download data <strong>and</strong> metadata into your R Environment. It is currently supporting KNB, ADC and EDI repositories because they rely on the metadata standard EML.</p>
+<p>Short <a href="https://brunj7.github.io/EDS-213-metadata/slides/metajam_intro.html">intro</a> to the package</p>
+<h3 id="exercise-2">Exercise 2</h3>
+<p>Let’s determine what percentage of Alaskan household are speaking only English!</p>
+<p>The data: <a href="https://doi.org/10.5063/F1N58JPP" class="uri">https://doi.org/10.5063/F1N58JPP</a></p>
+<ol type="1">
+<li>Read the metadata</li>
+<li>Download the data <code>household_language.csv</code> using metajam</li>
+<li>Read the data into R using metajam</li>
+<li>Write a piece of code that will compute the percentage of Alaskan household speaking only English for the year 2009 to 2015</li>
+<li>Create a plot to visualize this data</li>
+</ol>
+<h3 id="bonus-1">Bonus</h3>
+<p>How does it compare to French?</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
