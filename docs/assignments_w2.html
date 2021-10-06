@@ -86,26 +86,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>EDS 213: Group Project Description</title>
+  <title>EDS 213: Assignments week 2</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="EDS 213: Group Project Description"/>
+  <meta property="og:title" content="EDS 213: Assignments week 2"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="EDS 213"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="EDS 213: Group Project Description"/>
+  <meta property="twitter:title" content="EDS 213: Assignments week 2"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Group Project Description"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Assignments week 2"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2459,7 +2459,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Group Project Description","authors":[]}
+{"title":"Assignments week 2","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2507,7 +2507,7 @@ Assignments
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Group Project Description</h1>
+<h1>Assignments week 2</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2519,29 +2519,37 @@ Assignments
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#group-project-goal">Group Project Goal</a></li>
-<li><a href="#project-development">Project Development</a></li>
-<li><a href="#project-example">Project Example</a></li>
+<li><a href="#week2">Week2</a>
+<ul>
+<li><a href="#assignment-2.1-dataretrieval">Assignment 2.1 – <code>dataRetrieval</code></a></li>
+<li><a href="#assignment-2.2-metajam">Assignment 2.2 – <code>metajam</code></a></li>
+<li><a href="#assignment-2.3-use-an-api-to-retrieve-data-for-your-project">Assignment 2.3 – Use an API to retrieve data for your project</a></li>
+</ul></li>
+<li><a href="#due-date">Due date:</a></li>
 </ul>
 </nav>
 </div>
-<h2 id="group-project-goal">Group Project Goal</h2>
-<p>The goal of the group project is to practice the re-use of data for a <a href="https://www.nceas.ucsb.edu/our-approach">synthesis project</a> merging different datasets to get new insights, as well as preserving your scientific products on a data repository.</p>
-<h2 id="project-development">Project Development</h2>
-<p>You will have to:</p>
+<h2 id="week2">Week2</h2>
+<p><strong>Create a GitHub repository to store your codes of assignment 2.1 and 2.2.</strong> Use your group project repository for 2.3.</p>
+<h3 id="assignment-2.1-dataretrieval">Assignment 2.1 – <code>dataRetrieval</code></h3>
 <ol type="1">
-<li>Define an environmental scientific question you would like to answer</li>
-<li>Search <a href="https://search.dataone.org/data">dataONE</a>, <a href="https://datasetsearch.research.google.com/">Google datasets</a> and other data repositories (<a href="https://www.re3data.org/" class="uri">https://www.re3data.org/</a>) to find data to try to answer this question</li>
-<li>Develop a Data Management Plan for your project, including keeping track of the provenance (sources) of your data and who will be in charge of what.</li>
-<li>Develop a scripted workflow to conduct your analysis. When possible relies on API to programmatically download the necessary data sets</li>
-<li>Preserve your data products on the <a href="https://knb.ecoinformatics.org/">KNB</a> repository, including developing the necessary metadata to make them reusable</li>
-<li>Document and Make your code available</li>
+<li>Add the <a href="https://waterdata.usgs.gov/nwis/uv?site_no=11113500">Santa Paula Creek</a> gauge to exercise we did in class</li>
+<li>What is the best way to query multiple sites using this R package?</li>
+<li>Create a plot showing any stream flow response to the rain of last night (10/04). Determine at what time did the stream flow peaked (if any) at the two locations?</li>
 </ol>
-<p><strong>The most important part of the project is to go through those steps</strong>. Having a conclusion or a specific answer to your scientific question at the end of the project is secondary. The evaluation will be focused on the steps followed and how reusable your work will be.</p>
-<h2 id="project-example">Project Example</h2>
-<p>I will take the example of the LTER Luquillo stream chemistry dataset that we used for the <a href="https://brunj7.github.io/EDS-214-analytical-workflows/group_project.html">group project of EDS-214</a>.</p>
-<p>An example of project question based on this data could be: <em>Do hurricanes have an significant impact on stream chemistry and how variable is this response across the US?</em> The data sets to merge could be the one we used for Luquillo combined with other LTER sites, such as <a href="https://lternet.edu/site/florida-coastal-everglades-lter/">Florida Coastal Everglades</a>, or <a href="https://waterdata.usgs.gov/nwis">USGS stream data</a> along hurricane tracks.</p>
-<p>Actually, there was a recent LTER synthesis working group which looked at patterns in stream chemistry: <a href="https://lternet.edu/working-groups/stream-energy-nutrient-cycling/" class="uri">https://lternet.edu/working-groups/stream-energy-nutrient-cycling/</a></p>
+<h3 id="assignment-2.2-metajam">Assignment 2.2 – <code>metajam</code></h3>
+<p>Finish the exercise we started during the lab session to use <code>metajam</code> to download the Alaskan household languages data from DataONE.</p>
+<p>For inspiration Here is the code sample we started during the lab: <a href="https://brunj7.github.io/EDS-213-metadata/codes/metajam_session.html" class="uri">https://brunj7.github.io/EDS-213-metadata/codes/metajam_session.html</a></p>
+<p><strong>Push all your codes to a GitHub repository and add me (<code>brunj7</code>) as a collaborator to your repository.</strong></p>
+<h3 id="assignment-2.3-use-an-api-to-retrieve-data-for-your-project">Assignment 2.3 – Use an API to retrieve data for your project</h3>
+<p>As your group project team:</p>
+<ol type="1">
+<li><p>Based and what we discussed this week, find an API that you could use to retrieve data you are using in your group project.</p></li>
+<li><p><strong>In your Group project repository</strong>, write a script to retrieve the data relying on this API. Don’t forget to capture any information about how you found the data as well as any metadata in the Rmarkdown / jupyter notebook so an external user can understand the data set(s) and track their source / data provider.</p></li>
+</ol>
+<h2 id="due-date">Due date:</h2>
+<p><strong>Wed 10/13/2021 at 12PM (Noon)</strong></p>
+<p><br></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
