@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 Data Package: https://doi.org/10.5063/F1N58JPP
 
 ## Libraries
-```{r}
+```{r, message=FALSE}
 library(tidyverse)
 library(ggplot2)
 # install.packages("metajam")
@@ -30,15 +30,18 @@ library(metajam)
 data_url <- "https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A7fc6f6db-c5ea-426a-a743-1f2edafb43b8"
 
 # Download the data and metadata to my Desktop
-metajam::download_d1_data(data_url, "~/Desktop")
+local_path <- metajam::download_d1_data(data_url, "~/Desktop")
 ```
 
 ## Read the data
 
-```{r}
+```{r, echo=FALSE}
 # Copy the path from above to cache it
 local_path <- "~/Desktop/doi_10.5063_F1CJ8BPH__household_language__csv"
+```
 
+
+```{r, message=FALSE}
 # Read the data and metadata
 hh_list <- metajam::read_d1_files(local_path)
 
@@ -46,7 +49,7 @@ hh_list <- metajam::read_d1_files(local_path)
 hh_data <- hh_list$data
 
 # get the attribute (columns) metadata
-hh_att_metadata <- data_list$attrubute_metadata
+hh_att_metadata <- hh_list$attrubute_metadata
 
 ```
 
@@ -54,4 +57,8 @@ hh_att_metadata <- data_list$attrubute_metadata
 
 Create a plot by year from 2009 to 2015 showing the **average** percentage of household speaking only English at the State level (one data point per year)
 
+<br>
 
+## More examples about how to use `metajam`
+
+https://nceas.github.io/metajam/articles/dataset-single.html
