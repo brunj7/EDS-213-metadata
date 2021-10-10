@@ -13,6 +13,8 @@ navbar:
           href: week_1.html
         - text: "Week 2"
           href: week_2.html
+        - text: "Week 3"
+          href: week_3.html
     - text: "Assignments"
       menu:
         - text: "Assignments Week 1"

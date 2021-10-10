@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Managing and Structuring your Data for Preservation</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Julien Brun" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Managing and Structuring your Data for Preservation
+### Julien Brun
+### MEDS-213
+### 2021/10
+
+---
+
+
+
+
+# Managing your Data
+
+**Data is a valuable asset!!**
+
+Data should be managed to:
+
+- Maximize the effective use and value of data
+- Continually improve the quality (accuracy, integrity, integration,...) 
+- Ensure appropriate use of data and information
+- Facilitate data sharing 
+- Ensure sustainability and accessibility in long term for re-use in science
+
+---
+
+## Data Life Cycle
+
+The data life cycle provides a high level overview of the stages involved in successful management and preservation of data for use and reuse.
+
+&lt;img src="images/DLC.png" width="70%" style="display: block; margin: auto;" /&gt;
+---
+
+# Data Management Plans (DMP)
+
+
+### A data management plan **describes how you will manage your data during the lifetime of a research project**. The process of creating your DMP will force you to think about potential issues related to the project's data that could affect timeline, costs and personnel needed.
+
+---
+
+# Data Management Plans (DMP)
+
+## Goal: Answer these 4 questions:
+
+1. How much data will be collected and how will it be treated?
+
+2. How much time is needed to manage the data and who will be responsible for doing so?
+
+3. How long should the data be preserved and where is the best location to do so?
+
+4. Are there any legal constraints associated with acquiring, using and sharing project data?
+
+
+
+.footnote[
+*from  Recknagel and Michener. "Ecological Informatics", 2017*
+]
+
+---
+
+# Don't loose your data
+
+## *Accidents happen !!!*
+
+![](images/broken-laptop.png) ![](images/screen-keyboard.png)
+
+---
+
+# Document: Sooner the Better
+
+Document and preserve your data when you are actively analyzing them! 
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/archiving-timeline.png" alt="Recknagel and Michener, 2017" width="50%" /&gt;
+&lt;p class="caption"&gt;Recknagel and Michener, 2017&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="notes"&gt;
+At this time, it is the easiest for you to document and preserve your project’s data, because you know and understand the most about them. Then slowly, or more rapidly due to life events and technology shifts, what you know about the data declines.
+&lt;/div&gt;
+
+---
+
+# Document Soon, it is also for yourself
+
+You would not have to remember:
+
+- The name of that file?
+
+- The directory where you put it?
+
+- The units those measurements were taken in?
+
+- Which sample site was which?
+
+- Is it the cleaned version of the data set used for publication?
+
+&lt;br&gt;
+
+**=&gt;  Easier to share with others, good for collaborations!**
+
+---
+class: center, middle, inverse
+
+# Data Modeling for Data Reuse
+
+
+
+---
+
+# Benefits of normalized or "tidy" data 
+
+### Analitycal:
+
+- Powerful search and filtering
+
+- Handle large and/or complex data sets
+
+- Help to enforce data integrity
+
+- Easier to handle data updates
+
+&lt;br&gt;
+
+###*=&gt; Easier to conduct your analysis and even so for others!!*
+
+---
+
+# Benefits of normalized or "tidy" data 
+
+
+## Preservation:
+
+- Easier to describe
+
+- Easier to automate metadata creation
+
+- Easier to implement Quality Check
+
+---
+
+# Data Heterogeneity
+
+Data are heterogeneous in:
+
+- **Structure** (schema): Logical model of the data (e.g., tables, hierarchical trees, raster images, etc.)
+
+- **Semantics**: Specific meaning of the data (e.g., nature and types of measurements, importance of contextual information, interpretation of record structure, etc.): documentation
+
+- **Syntax**: Digital format of the data (e.g., csv, “R data frame”, NetCDF, Excel XLSX, DBF, etc.)
+
+---
+
+# Why Tabular Data?
+
+Spreadsheets are (still) the primary data entry tool of the digital age!
+
+&lt;img src="images/spreadsheet-1.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+### *_=&gt;  Encourages you to mix your data and your analysis_*
+
+---
+
+# Data Organization
+
+&lt;img src="images/excel-org-01.png" width="100%" /&gt;
+
+---
+
+# Multiple tables
+
+&lt;img src="images/excel-org-02.png" width="100%" /&gt;
+
+---
+
+# Inconsistent observations
+
+&lt;img src="images/excel-org-03.png" width="100%" /&gt;
+
+---
+
+# Inconsistent variables
+
+&lt;img src="images/excel-org-04.png" width="100%" /&gt;
+
+---
+
+## Marginal sums and statistics == Analysis
+
+&lt;img src="images/excel-org-05.png" width="100%" /&gt;
+
+*=&gt;  A Spreadsheet is not a table !!*
+
+---
+class: center, middle, inverse
+# Good enough data modeling
+
+---
+
+# Terminological Soup
+
+
+Table = Relation = Data set   (~ Worksheet) 
+
+Column = Variable = Attribute = Characteristic
+
+Row = Record = Tuple  &lt;&gt; Observation
+
+Keys are used to Join or Merge
+
+Cell = Value = Measurement 
+
+Data Model = Schema
+
+---
+
+# Denormalized data (aka non-tidy data)
+
+Observations about different entities combined
+
+&lt;img src="images/table-denorm.png" width="90%" /&gt;
+
+&lt;div class="notes"&gt;
+In the above example, each row has measurements about both the `site` at which observations occurred, as well as observations of two individuals of possibly different species found at that site.  This is *not normalized* data.
+
+People often refer to this as *wide* format, because the observations are spread across a wide number of columns.  Note that, should one encounter a new species in the survey, we wold have to add new columns to the table.  This is difficult to analyze, understand, and maintain.
+&lt;/div&gt;
+
+---
+
+# Tabular data
+
+__Observations__. A better way to model data is to organize the observations about each type of entity in its own table.  This results in:
+
+- Separate tables for each type of entity measured
+
+- Each row represents a single observed entity
+
+- Observations (rows) are all unique
+
+__This is *normalized* data (aka *tidy data*)__
+
+---
+
+# Tabular data
+
+__Variables__. In addition, for normalized data, we expect the variables to be organized such that:
+
+- All values in a column are of the same type
+
+- All columns pertain to the same observed entity (e.g., row)
+
+---
+
+# Tabular data
+
+&lt;img src="images/tables-norm.png" width="80%" /&gt;
+
+&lt;div class="notes"&gt;
+Here's an example of tidy (normalized) data in which the top table is the collection
+of observations about individuals of several species, and the bottom table are the
+observations containing properties of the sites at which the species occurred.
+&lt;/div&gt;
+
+---
+
+# How to relate tables?
+
+When one has normalized data, we often use unique identifiers to reference
+particular observations, which allows us to link across tables.  Two types of
+identifiers are common within relational data:
+
+- _Primary Key_: unique identifier for each observed entity, one per row
+- _Foreign Key_: reference to a primary key in another table (linkage)
+
+---
+
+# How to relate tables?
+
+&lt;img src="images/tables-keys.png" width="1573" /&gt;
+
+&lt;div class="notes"&gt;
+For example, in the second table below, the `site` column is the *primary key* 
+of that table, because it uniquely identifies each row of the table as a unique
+observation of a site.  In the first table, however, the `site` column is a 
+*foreign key* that references the primary key from the second table.  This linkage
+tells us that the first height measurement for the `DAPU` observation occurred
+at the site with the name `Taku`.
+&lt;/div&gt;
+
+---
+
+# Entity-Relationship Model (ER)
+
+An Entity-Relationship model allows us to compactly draw the structure of the
+tables in a relational database, including the primary and foreign keys in the tables.
+
+.pull-left[
+&lt;img src="images/plotobs-diagram.png" width="70%" /&gt;
+]
+
+.pull-right[
+&lt;br&gt;
+&lt;br&gt;
+In the above model, one can see that each site in the `SITES` table must have one
+or more observations in the `PLOTOBS` table, whereas each `PLOTOBS` has one and 
+only one `SITE`.
+]
+
+---
+
+# Simple Guidelines for Effective Data Preservation
+
+- Design to add rows, not columns
+
+- Each column one type
+
+- Header line
+
+- Non-proprietary formats
+
+- Descriptive names
+
+- No spaces
+
+---
+
+# Semantic Ambiguity
+
+- Column headers: 
+   - Avoid cryptic names
+   - Concise, but not meaningful 
+   - Units (kg or g?) 
+   
+- Color coding:
+   - avoid using formatting (implicit)
+   - add a column to store this information with a flag
+
+---
+
+# Semantic Ambiguity
+
+&lt;img src="images/semantics-color.png" width="1800" /&gt;
+
+---
+
+# Semantic Ambiguity
+
+&lt;img src="images/semantics-legend.png" width="2317" /&gt;
+
+---
+
+# Semantic Ambiguity
+
+&lt;img src="images/semantics-good.png" width="1979" /&gt;
+
+---
+
+# Semantic Ambiguity
+
+&lt;img src="images/semantics-right.png" width="1968" /&gt;
+
+
+---
+
+# Resources used
+
+- Recknagel, F., Michener, W.K., 2018. Ecological informatics: data management and knowledge discovery, 3rd ed. ed. Springer, Cham.
+- DataONE, Data Life Cycle: https://www.dataone.org/data-life-cycle
+- DataONE data management guide: https://www.dataone.org/sites/all/documents/DataONE-PPSR-DataManagementGuide.pdf
+- ESIP, Data Management Plans: http://commons.esipfed.org/datamanagementshortcourse
+- Borer, Elizabeth T., Eric W. Seabloom, Matthew B. Jones, and Mark Schildhauer. (2009) "Some Simple Guidelines for Effective Data Management." The Bulletin of the Ecological Society of America 90, no. 2: 205-14. https://doi.org/10.1890/0012-9623-90.2.205
+- Michener, W. K. (2015). Ten Simple Rules for Creating a Good Data Management Plan. PLoS Comput Biol , 11(10). presented at the 10/2015.  https://doi.org/10.1371/journal.pcbi.1004525
+- [Borer et al. 2009. **Some Simple Guidelines for Effective Data Management.** Bulletin of the Ecological Society of America.](http://matt.magisa.org/pubs/borer-esa-2009.pdf)
+- [Software Carpentry SQL tutorial](https://swcarpentry.github.io/sql-novice-survey/)
+- [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf)
+
+
+
+---
+
+
+# Aknowledgements
+
+These slides have been adapted from NCEAS training to rescue coral reef data in collaboration with CRESCYNTH.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
