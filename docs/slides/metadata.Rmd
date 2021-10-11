@@ -166,7 +166,7 @@ Think about potential audiences / users:
 
 ---
 
-# Titles
+# Metadata Titles
 
 Good titles include: 
 
