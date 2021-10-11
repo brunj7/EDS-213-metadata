@@ -256,5 +256,9 @@ knitr::include_graphics("images/metadata_abstract_good.png")
 - Missing value codes and definitions
 
 
+---
 
+# Aknowledgements
+
+This slide deck is an adaptation of the "Authoring High Quality Metadata" by Jesse Goldstein and Jeanette Clark,  UC Santa Barbara
 
