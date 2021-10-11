@@ -31,9 +31,12 @@ Data should be managed to:
 
 ---
 
-## Data Life Cycle
+# Data Life Cycle
 
 The data life cycle provides a high level overview of the stages involved in successful management and preservation of data for use and reuse.
+
+<br>
+
 
 ```{r, out.width="70%", fig.align='center'}
 knitr::include_graphics("images/DLC.png")
