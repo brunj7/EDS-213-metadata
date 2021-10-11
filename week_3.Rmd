@@ -1,5 +1,5 @@
 ---
-title: "week_3": Data Modeling and Metadata Standards for Environmental Data
+title: "Week 3: Data Modeling and Metadata Standards for Environmental Data"
 ---
 
 ```{r setup, include=FALSE}
