@@ -132,4 +132,129 @@ class: center, middle, inverse
 
 <br>
 
+--
+
 _More on the Research Data Alliance:_ https://rd-alliance.github.io/metadata-directory/standards/
+
+
+---
+
+# What makes a good metadata record?
+
+### Overall goal: Could a reasonable scientist make sense of your data in 10, 20, 30+ years without contacting you?
+
+<br>
+
+When in doubt, be more specific:
+- Spell out acronyms
+- Use full names, emails, addresses, etc.
+
+Include as much information as possible directly in the metadata record
+
+---
+
+# What makes a good metadata record?
+
+Think about potential audiences / users:
+
+- Someone looking directly for your data
+- Someone who does not know about your work but should
+- Someone looking to scrutinize your work
+- Someone trying to reproduce your work
+- Someone looking to give you credit for your work
+
+
+---
+
+# Titles
+
+Good titles include: 
+
+- What
+- When
+- Where
+
+<br>
+--
+
+**The title is often the first way a user will evaluate your data set!!**
+
+--
+
+### Example:
+
+"ITP37, 2009"
+
+OR
+
+"Ocean water property observations reported from ice-tethered profiler #37, Transpolar Drift, 2009"
+
+---
+
+# Metadata record
+
+How do you describe the location and the period of observation of the data record is also very important!!
+
+--
+
+```{r, out.width="100%", fig.align='center'}
+knitr::include_graphics("images/metadata_record_bad.png")
+```
+
+
+
+---
+
+# Metadata record
+
+```{r, out.width="100%", fig.align='center'}
+knitr::include_graphics("images/metadata_record_good.png")
+```
+
+---
+
+# Metadata abstract
+
+A good metadata abstract will:
+
+- Be distinct from publication abstract
+
+- Provide more context than the title
+
+- Give a high-level summary of methodologies, data formats, coverage, etc.
+
+--
+
+```{r, out.width="100%", fig.align='center'}
+knitr::include_graphics("images/metadata_abstract_good.png")
+```
+
+---
+
+# Metadata creators/authors
+
+- Name alone is not enough...
+   - to assign credit, nor
+   - to disambiguate across data sets
+   
+- Email addresses help (when possible use one that can be passed on)
+- Including an [ORCID iD](https://orcid.org/) is best
+
+
+---
+
+# Metadata attributes
+
+- Column names
+
+- Column name definitions (semantics!)
+
+- Format strings for dates
+
+- Units
+
+- Missing value codes and definitions
+
+
+
+
