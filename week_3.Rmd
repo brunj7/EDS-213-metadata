@@ -1,0 +1,31 @@
+---
+title: "week_3": Data Modeling and Metadata Standards for Environmental Data
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Monday 10/011/2021 -- Lecture + Group project
+
+## Data Modeling
+
+**[Slides](https://brunj7.github.io/EDS-213-metadata/slides/data_modeling.html)**
+
+<br>
+
+
+---
+
+
+
+
+## Metadata Standards for Environmental Data
+
+**[Slides](https://brunj7.github.io/EDS-213-metadata/slides/metadata.html)**
+
+<br>
+
+
+

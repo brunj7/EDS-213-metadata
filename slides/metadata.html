@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Metadata Standards for Environmental Data</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Julien Brun" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Metadata Standards for Environmental Data
+### Julien Brun
+### MEDS-213
+### 2021/10
+
+---
+
+
+
+
+# What is Metadata?
+
+**Think of metadata as data reporting -- Data about data**
+
+- WHO created the data?
+
+- WHAT is the content of the data?
+
+- WHEN were the data collected?
+
+- WHERE are the data from?
+
+- HOW were the data developed?
+
+- WHY were the data developed?
+
+---
+
+# What is Metadata important
+
+### Metadata are important for the short and long-term utility of data
+
+
+---
+
+# Who uses metadata?
+
+&lt;img src="images/metadata_users.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Metadata for data Re-user
+
+- Find relevant data
+
+- Evaluate what is suitable for use in your work
+- Retrieve the data you’ve found
+- Understand if and how to actually use the data
+
+
+---
+
+# Metadata for data producers
+
+- Avoid data duplication
+   - What data have already been collected? 
+   - Save time the next time
+   - Hey, I’ve already done this!
+   
+- Share reliable information
+   - What methods were used
+   - How data were collected
+   
+- Publicize your work 
+   - Citation
+   - Credits 
+
+---
+
+# Metadata for organizations
+
+- Help ensure the organization’s investment in the data
+   - Ability to use data after initial intended purpose
+   - Track data re-use and citation 
+
+- Transcend people and time
+   - Data are not lost when researchers or labs leave
+   - Avoid duplication in new work 
+
+- Advertise organization’s research
+   - What data has our organization produced?
+   
+---
+
+# Concerns about creating metadata
+
+&lt;img src="images/metadata_concerns.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+class: center, middle, inverse
+
+# Metadata standards
+
+---
+
+# Metadata Standards
+
+### A metadata standard provides a uniform structure to describe data:
+
+- Machine readable (e.g. XML)
+
+- Common terminology
+
+- Common structure
+
+---
+
+# Standard examples
+
+- [Dublin Core](https://dublincore.org/) (emphasis on publications)
+
+- [Darwin Core](https://dwc.tdwg.org/) (emphasis on collections)
+
+- [FGDC](https://www.fgdc.gov/metadata) (emphasis on spatial data and gov. data)
+
+- [ISO19115](https://www.iso.org/standard/53798.html) (emphasis on spatial data and services)
+
+- [Ecological Metadata Language, EML](https://nceas.github.io/eml/) (emphasis on table attributes and taxonomy)
+
+&lt;br&gt;
+
+--
+
+_More on the Research Data Alliance:_ https://rd-alliance.github.io/metadata-directory/standards/
+
+
+---
+
+# What makes a good metadata record?
+
+### Overall goal: Could a reasonable scientist make sense of your data in 10, 20, 30+ years without contacting you?
+
+&lt;br&gt;
+
+When in doubt, be more specific:
+- Spell out acronyms
+- Use full names, emails, addresses, etc.
+
+Include as much information as possible directly in the metadata record
+
+---
+
+# What makes a good metadata record?
+
+Think about potential audiences / users:
+
+- Someone looking directly for your data
+- Someone who does not know about your work but should
+- Someone looking to scrutinize your work
+- Someone trying to reproduce your work
+- Someone looking to give you credit for your work
+
+
+---
+
+# Titles
+
+Good titles include: 
+
+- What
+- When
+- Where
+
+&lt;br&gt;
+--
+
+**The title is often the first way a user will evaluate your data set!!**
+
+--
+
+### Example:
+
+"ITP37, 2009"
+
+OR
+
+"Ocean water property observations reported from ice-tethered profiler #37, Transpolar Drift, 2009"
+
+---
+
+# Metadata record
+
+How do you describe the location and the period of observation of the data record is also very important!!
+
+--
+
+&lt;img src="images/metadata_record_bad.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+
+# Metadata record
+
+&lt;img src="images/metadata_record_good.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Metadata abstract
+
+A good metadata abstract will:
+
+- Be distinct from publication abstract
+
+- Provide more context than the title
+
+- Give a high-level summary of methodologies, data formats, coverage, etc.
+
+--
+
+&lt;img src="images/metadata_abstract_good.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Metadata creators/authors
+
+- Name alone is not enough...
+   - to assign credit, nor
+   - to disambiguate across data sets
+   
+- Email addresses help (when possible use one that can be passed on)
+- Including an [ORCID iD](https://orcid.org/) is best
+
+
+---
+
+# Metadata attributes
+
+- Column names
+
+- Column name definitions (semantics!)
+
+- Format strings for dates
+
+- Units
+
+- Missing value codes and definitions
+
+
+---
+
+# Aknowledgements
+
+This slide deck is an adaptation of the "Authoring High Quality Metadata" by Jesse Goldstein and Jeanette Clark,  UC Santa Barbara
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
