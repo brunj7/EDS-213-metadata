@@ -7,7 +7,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-# Monday 10/011/2021 -- Lecture + Group project
+# Monday 10/011/2021 -- Lecture
 
 ## Data Modeling
 
@@ -17,8 +17,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ---
-
-
 
 
 ## Metadata Standards for Environmental Data
