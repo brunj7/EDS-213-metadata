@@ -21,6 +21,8 @@ navbar:
           href: assignments_w1.html
         - text: "Assignments Week 2"
           href: assignments_w2.html
+        - text: "Assignments Week 3"
+          href: assignments_w3.html
     - text: "Group Project"
       href: group_project.html
     - text: "Resources"

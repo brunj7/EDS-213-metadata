@@ -13,10 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **[Slides](https://brunj7.github.io/EDS-213-metadata/slides/data_modeling.html)**
 
-<br>
 
-
----
 
 
 ## Metadata Standards for Environmental Data
@@ -25,5 +22,23 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <br>
 
+# Wednesday 10/13/2021 -- Lab
+
+## Data Managment
+
+As your team project, answer the following questions to help you plan the data management for your project
+
+1. How much data will be collected and how will it be treated?
+
+2. How much time is needed to manage the data and who will be responsible for doing so?
+
+3. How long should the data be preserved and where is the best location to do so?
+
+4. Are there any legal constraints associated with acquiring, using and sharing project data?
+
+
+## Data Provenance
+
+Copy and Modify the following data log template to log information about the provenance of your data: https://docs.google.com/spreadsheets/d/1LLpOyydCGTZdY8Xk2fDmTPVy8efF-47GtEXkAjvYsJI/edit#gid=0
 
 

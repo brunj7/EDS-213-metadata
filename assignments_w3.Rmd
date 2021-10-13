@@ -1,0 +1,21 @@
+---
+title: "Assignments week 3"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Week 3
+
+- Add you data management to your project repository
+- Add you data log to your project repository
+- Develop and add scripts to process the data and combine the various datasets
+
+
+## Due date:
+
+**Tue 10/19/2021 at 12PM (Noon)**
+
+<br>
