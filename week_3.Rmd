@@ -7,7 +7,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-# Monday 10/011/2021 -- Lecture
+# Monday 10/11/2021 -- Lecture
 
 ## Data Modeling
 

@@ -1,0 +1,20 @@
+---
+title: "Week 4: Data Semantics"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Monday 10/18/2021 -- Lecture
+
+## Data Semantics
+
+**[Introduction](https://docs.google.com/presentation/d/e/2PACX-1vREUl0iUMXFsKUkCnBaU40wExFfy6T5EsSDR1MvFL9nFhKkJsZflyvZVxg43KOx4oDL-zuGLz4Z2Ztu/pub?start=false&loop=false&delayms=60000)**
+
+
+**Applied example: Salmon Ontology**
+
+
+
