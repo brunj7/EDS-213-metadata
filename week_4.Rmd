@@ -28,7 +28,7 @@ Assemble your class project team and:
 If you found a matching definition save the purl referring to it!
 
 
-# Monday 10/20/2021 -- Lab
+# Wednesday 10/20/2021 -- Lab
 
 ## Archiving data
 
