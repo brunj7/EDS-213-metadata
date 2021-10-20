@@ -24,6 +24,20 @@ You will have to:
 
 **The most important part of the project is to go through those steps**. Having a conclusion or a specific answer to your scientific question at the end of the project is secondary. The evaluation will be focused on the steps followed and how reusable your work will be.
 
+## Project Presentation
+
+**Prepare a 6 slides / 10min Presentation**
+
+You should address:
+
+- The question you are trying to answer
+- Data Management plan, including who did what
+- How you got the data (API, ...) & merge it
+- Some cool results you got
+- Where is your work Preserved: 
+   - Data package on KNB including data set(s) produced and code(s)
+   - GitHub Repository with a well documented README
+
 
 ## Project Example
 
