@@ -15,14 +15,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Group Poject work
 
-Assemble your class project team and:
-
-1. Discuss the definition of one concept you are using in your project (e.g forest)
-2. Search the [Bioportal](https://bioportal.bioontology.org) repository (or the [ECSO ontology](https://bioportal.bioontology.org/ontologies/ECSO/?p=classes&conceptid=root) we discussed) and try to find the definition that matches the best your concept
-3. Discuss any discrepancies you might have between your "team" definition and the one found online
-
-If you found a matching definition save the purl referring to it!
-
 
 # Wednesday 10/27/2021 -- Group Project Presentations
 
