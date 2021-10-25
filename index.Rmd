@@ -79,9 +79,9 @@ Mondays from 1-2PM, except Monday 10/11 2-3PM (due to workshop)
 | Monday 10/11	| Lecture	| Preserving data -- Data modeling & Metadata standards for environmental data |
 | Wednesday 10/13	| Lab	| Preserving data -- Developing your Data Management Plan | 
 | Monday 10/18	| Lecture	| Preserving data -- Data Provenance and Semantics | 
-| Wednesday 10/20	| Lab	| Preserving data -- Documenting things |
-| Monday 10/25	| Lecture	| Preserving your data -- uploading data to the KNB |
-| Wednesday 10/27	| Lab	| Project presentations |
+| Wednesday 10/20	| Lab	| Preserving data -- Preserving Data on the KNB  |
+| Monday 10/25	| Lecture	| Preserving your data -- Group Project time |
+| Wednesday 10/27	| Lab	| Group Project presentations |
 
 
 ## Grading

@@ -1,0 +1,28 @@
+---
+title: "Week 5: Applying what we learned -- Group Projects"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# Monday 10/25/2021 -- Meeting your next instructor
+
+## Ben Best
+
+[Ben Best](http://www.bdbest.org/cv) is an environmental Data Scientist who launched [Ecoquants](https://ecoquants.com) to support data driven decision making for environmental and ecological problem solving. He will share his path to & thoughts on environmental data science, as well as what EDS-213 Team Science course will be focusing on.
+
+## Group Poject work
+
+Assemble your class project team and:
+
+1. Discuss the definition of one concept you are using in your project (e.g forest)
+2. Search the [Bioportal](https://bioportal.bioontology.org) repository (or the [ECSO ontology](https://bioportal.bioontology.org/ontologies/ECSO/?p=classes&conceptid=root) we discussed) and try to find the definition that matches the best your concept
+3. Discuss any discrepancies you might have between your "team" definition and the one found online
+
+If you found a matching definition save the purl referring to it!
+
+
+# Wednesday 10/27/2021 -- Group Project Presentations
+
