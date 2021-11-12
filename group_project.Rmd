@@ -46,3 +46,46 @@ I will take the example of the LTER Luquillo stream chemistry dataset that we us
 An example of project question based on this data could be: _Do hurricanes have an significant impact on stream chemistry and how variable is this response across the US?_  The data sets to merge could be the one we used for Luquillo combined with other LTER sites, such as [Florida Coastal Everglades](https://lternet.edu/site/florida-coastal-everglades-lter/), or [USGS stream data](https://waterdata.usgs.gov/nwis) along hurricane tracks.
 
 Actually, there was a recent LTER synthesis working group which looked at patterns in stream chemistry: https://lternet.edu/working-groups/stream-energy-nutrient-cycling/ 
+
+---
+
+## Group Projects
+
+(in order of presentation)
+
+- Group 8: Clarissa Boyajian, Alex Vand, and Scout Leonard -- **How do population demographic factors impact lead exposure in Philadelphia?**
+   - Presentation: https://scoutcleonard.github.io/eds213_group8/group8_presentation.html
+   - Code: https://github.com/scoutcleonard/eds213_group8
+   - Data: https://knb.ecoinformatics.org/view/urn%3Auuid%3Ad7c29133-7858-4880-bb59-be07d1cdd038
+   
+- Group 4: Cullen Molitor, Desik Somasundaram, Julia Parish, Ryan Munnikhuis -- **What is the effect of sea surface temperature on coral bleaching?**
+   - Presentation: https://docs.google.com/presentation/d/1UDMZihPIA2xYxqNjcoOsaR8Iv2Cf3F53TRkVYCVqRdM/edit#slide=id.p
+   - Code: https://github.com/desik23/eds-213-group-project
+   - Data: https://knb.ecoinformatics.org/view/urn:uuid:f8930217-24e9-4d1a-95a7-c64b8b6ea64d
+   
+- Group "San Clemmies": Paloma Cartwright, Mia Forsline, Daniel Kerstan, and Wylie Hampson -- **What is the abundance and impact of zebra mussel populations in US freshwater lakes?**
+   - Presentation: https://docs.google.com/presentation/d/18JdNrYsCUYXICQ1DeLwZRl_Xt-I1IdD-nI5Kyy6TGyQ/edit#slide=id.p
+   - Code: https://github.com/palomacartwright/EDS213_SanClemmies
+   - Data: https://knb.ecoinformatics.org/view/urn%3Auuid%3Ad662d417-1adf-4914-a55a-e8808d50ab70
+   
+- Group 1 / "Teamnado":  Peter Menzies, Shale Hunter, Alex Clippinger, and Charles Hendrickson -- **What are the effects of tornadoes on key water quality parameters?**
+   - Presentation: https://docs.google.com/presentation/d/16w0pr4vpWU33M6gnKU7Kc6pmiAt5FHSQvx3lot6qt_I/edit#slide=id.p
+   - Code: https://github.com/petermenzies/tornado-effects-on-water-quality-parameters
+   - Data: https://dev.nceas.ucsb.edu/view/urn%3Auuid%3A65290f76-2737-473e-94ac-6e71ecb77284 & https://dev.nceas.ucsb.edu/view/urn%3Auuid%3A251f2c8f-3f10-4d0a-8842-3e386b1264ae
+   
+- Group 2: Jake Eisaguirre, Juliet Cohen, Grace Lewin, and Connor Flynn -- **How does wind speed affect sea surface temperature and chlorophyll in our local Santa Barbara Channel?**
+   - Presentation: https://docs.google.com/presentation/d/1I8jAoIU_Qa1LQbCexdXcK8UybUn83wKSIvMQZZfk6bY/edit#slide=id.p
+   - Code: https://github.com/ConnorFlynn/EDS213_group_proj
+   - Data: https://knb.ecoinformatics.org/view/urn%3Auuid%3Ab9273004-1948-468a-93e7-d89a156bd172
+   
+- Group 7: Steven Cognac, Felicia Cruz, and Joe Decesaro -- **How have harmful algal blooms changed since 2011 at the Scripps Pier?**
+   - Presentation: https://docs.google.com/presentation/d/1p2oq-BFBPnbWuWOpSdYbpZGje0pwzl7HdFOTe0tVq8o/edit#slide=id.p
+   - Code: https://github.com/joedecesaro/EDS213_group7_project
+   - Data: https://knb.ecoinformatics.org/view/urn%3Auuid%3A59b5a00a-f9a5-46f9-b3aa-ccf8c4ddbd27
+   
+- Group 3: Halina Do-Linh, Allie Cole, and Marie Rivers -- **How MPA's affect sea otter populations**
+   - Presentation: https://marierivers.github.io/EDS_213_group_project/EDS_213_group_presentation.html
+   - Code: https://github.com/marierivers/EDS_213_group_project/blob/main/README.md
+   - Data: https://dev.nceas.ucsb.edu/view/urn%3Auuid%3A0d85a131-e471-4019-ba1a-e34eb9ed1ef2
+
+   
