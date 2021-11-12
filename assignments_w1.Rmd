@@ -60,7 +60,7 @@ groups
 
 #### Due date:
 
-Wed 09/29/2021
+**Wed 09/29/2021**
 
 
 ### Assignment 1.2 -- Define your group project question
@@ -74,28 +74,6 @@ Wed 09/29/2021
   - Link to your Group project repository on GitHub
   
 **See [here](group_project.html) for more background information about the group project**
-
-#### Project Teams
-
-```{r group project, cache=FALSE}
-library(tidyverse)
-library(DT)
-
-# Set the random seed to make this reproducible
-set.seed(123)
-
-# Read the roster 
-students <- read.csv("data/eds213_roster.csv")
-
-# Randomly create the groups
-students %>% 
-  slice(sample(1:n())) %>%   # randomly arrange the data frame
-  group_by((row_number()-1) %/% (n()/7)) %>%  # create 7 Groups
-  nest %>% pull() %>% bind_rows(.id = "Group") %>%  # group number as column
-  datatable(options = list(pageLength = 25))   # Display
-
-
-```
 
 
 

@@ -19,7 +19,18 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Assignment 2.2 --  `metajam`
 
-Finish the exercise we started during the lab session to use `metajam` to download the Alaskan household languages data from DataONE. 
+Finish the exercise we started during the lab session to use `metajam` to download the Alaskan household languages data from DataONE:
+
+For rappel:
+
+The data: https://doi.org/10.5063/F1N58JPP
+
+1. Read the metadata 
+2. Download the data `household_language.csv` using metajam
+3. Read the data into R using metajam
+4. Write a piece of code that will compute the percentage of Alaskan household speaking only English for the year 2009 to 2015
+5. Create a plot to visualize this data
+
 
 For inspiration Here is the code sample we started during the lab: https://brunj7.github.io/EDS-213-metadata/codes/metajam_session.html
 

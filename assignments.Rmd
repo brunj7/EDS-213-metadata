@@ -90,7 +90,7 @@ students <- read.csv("data/eds213_roster.csv")
 # Randomly create the groups
 students %>% 
   slice(sample(1:n())) %>%   # randomly arrange the data frame
-  group_by((row_number()-1) %/% (n()/7)) %>%  # create 7 Groups
+  group_by((row_number()-1) %/% (n()/8)) %>%  # create 7 Groups
   nest %>% pull() %>% bind_rows(.id = "Group") %>%  # group number as column
   datatable(options = list(pageLength = 25))   # Display
 

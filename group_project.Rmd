@@ -89,3 +89,27 @@ Actually, there was a recent LTER synthesis working group which looked at patter
    - Data: https://dev.nceas.ucsb.edu/view/urn%3Auuid%3A0d85a131-e471-4019-ba1a-e34eb9ed1ef2
 
    
+---
+
+### Project Teams Random Suggestion
+
+```{r group project, cache=FALSE}
+library(tidyverse)
+library(DT)
+
+# Set the random seed to make this reproducible
+set.seed(123)
+
+# Read the roster 
+students <- read.csv("data/eds213_roster.csv")
+
+# Randomly create the groups
+students %>% 
+  slice(sample(1:n())) %>%   # randomly arrange the data frame
+  group_by((row_number()-1) %/% (n()/7)) %>%  # create 7 Groups
+  nest %>% pull() %>% bind_rows(.id = "Group") %>%  # group number as column
+  datatable(options = list(pageLength = 25))   # Display
+
+
+```
+
