@@ -9,23 +9,23 @@ navbar:
       href: index.html
     - text: "Weeks"
       menu:
-        - text: "Week 1"
+        - text: "Week 1 - Data Preservation"
           href: week_1.html
-        - text: "Week 2"
+        - text: "Week 2 - APIs"
           href: week_2.html
-        - text: "Week 3"
+        - text: "Week 3- Data Modeling and Metadata Standards"
           href: week_3.html
-        - text: "Week 4"
+        - text: "Week 4 - Data Semantics"
           href: week_4.html
-        - text: "Week 5"
+        - text: "Week 5 - Applying what we learned"
           href: week_5.html
     - text: "Assignments"
       menu:
-        - text: "Assignments Week 1"
+        - text: "Assignments Week 1 - Journal Club"
           href: assignments_w1.html
-        - text: "Assignments Week 2"
+        - text: "Assignments Week 2 - APIs"
           href: assignments_w2.html
-        - text: "Assignments Week 3"
+        - text: "Assignments Week 3 - Data Management Plan"
           href: assignments_w3.html
     - text: "Group Project"
       href: group_project.html
