@@ -36,7 +36,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 9. Wilkinson, et al, 2016. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018. https://doi.org/10.1038/sdata.2016.18
 
-#### Group Project -- Teams
+#### Journal Club -- Teams
 
 ```{r journal club, cache=FALSE}
 library(tidyverse)
@@ -65,6 +65,8 @@ groups
 
 ### Assignment 1.2 -- Define your group project question
 
+**See [here](group_project.html) for more background information about the group project**
+
 #### Expectation:
 
 - Brainstorm as a group about your group project question
@@ -72,8 +74,6 @@ groups
   - Your environmental question
   - The type of data sets you are planning to search for on [ADC](https://arcticdata.io/catalog/data), [KNB](https://knb.ecoinformatics.org/) and/or [EDI](https://environmentaldatainitiative.org/) repositories via [DataONE](https://www.dataone.org/)
   - Link to your Group project repository on GitHub
-  
-**See [here](group_project.html) for more background information about the group project**
 
 
 
