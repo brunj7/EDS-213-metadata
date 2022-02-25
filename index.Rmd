@@ -72,16 +72,16 @@ Mondays from 1-2PM, except Monday 10/11 2-3PM (due to workshop)
 ```
 | Day / Session |	Session Type |	Topics |
 |-----------|-------|--------------------------------|
-| Monday 9/27	| Lecture |	Re-using data -- Data Preservation & Data Repositories |
-| Wednesday 9/29	| Lab	| Re-using data -- Using dataONE to find environmental data & Journal club|
-| Monday 10/4	| Lecture	| Re-using data -- Accessing data in a programatically way |
-| Wednesday 10/6	| Lab	| Re-using data -- APIs for environmental data |
-| Monday 10/11	| Lecture	| Preserving data -- Data modeling & Metadata standards for environmental data |
-| Wednesday 10/13	| Lab	| Preserving data -- Developing your Data Management Plan | 
-| Monday 10/18	| Lecture	| Preserving data -- Data Provenance and Semantics | 
-| Wednesday 10/20	| Lab	| Preserving data -- Preserving Data on the KNB  |
-| Monday 10/25	| Lecture	| Preserving your data -- Group Project time |
-| Wednesday 10/27	| Lab	| Group Project presentations |
+| Monday 9/27	| week 1 - Lecture |	[Re-using data -- Data Preservation & Data Repositories](week_1.html) |
+| Wednesday 9/29	| week 1 - Lab	| Re-using data -- Using dataONE to find environmental data & Journal club|
+| Monday 10/4	| week 2 - Lecture	| [Re-using data -- Accessing data in a programatically way](week_2.html#monday-10042021-lecture) |
+| Wednesday 10/6	| week 2 - Lab	| [Re-using data -- APIs for environmental data](week_2.html#wednesday-10062021-using-apis-lab) |
+| Monday 10/11	| week 3 - Lecture	| [Preserving data -- Data modeling & Metadata standards for environmental data](week_3.html#monday-10112021-lecture) |
+| Wednesday 10/13	| week 3 - Lab	| [Preserving data -- Developing your Data Management Plan](week_3.html#wednesday-10132021-lab) | 
+| Monday 10/18	| week 4 - Lecture	| [Preserving data -- Data Provenance and Semantics](week_4.html#monday-10182021-lecture) | 
+| Wednesday 10/20	| week 4 - Lab	| [Preserving data -- Preserving Data on the KNB](https://brunj7.github.io/EDS-213-metadata/week_4.html#wednesday-10202021-lab)  |
+| Monday 10/25	| week 5 - Lecture	| [Meet your next instructor](week_5.html) -- Group Project Q&A |
+| Wednesday 10/27	| week 5 - Lab	| [Group Project presentations](group_project.html#group-projects) |
 
 
 ## Grading
